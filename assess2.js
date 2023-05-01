@@ -14,39 +14,40 @@ const books = [
 // books.
 function getAvailableBooks(){
 const newBooks=[]
-for(let i=0;i<isAvailable.length;i++){
-    if(i===isAvailable){
+for(let i=0;i<books.length;i++){
+    if(i>=0){
         newBooks.push(isAvailable[i])
     }
 }
 return newBooks
 }
+console.log(getAvailableBooks())
 console.log(newBooks)
-// Create a function getBooksByAuthor that takes an author's name as an argument and
-// returns an array of all books by that author.
+// // Create a function getBooksByAuthor that takes an author's name as an argument and
+// // returns an array of all books by that author.
 function getBooksByAuthor(authorsname){
 for(let i=0;i<authorsname.length;i++){
     return i
 }
 }
 console.log(getBooksByAuthor(authorsname))
-// Create a function addNewBook that takes a book object as an argument and adds it
-// to the library, ensuring that the new book has all required properties (title, author,
-// publicationYear, and isAvailable).
-// function addNewBook(){
-//     new_list(=>){
-//         title:`Born a crime`,
-//         author:`Trevor Noah`,
-//         publicationYear:2017,
-//         isAvailable:True
+// // Create a function addNewBook that takes a book object as an argument and adds it
+// // to the library, ensuring that the new book has all required properties (title, author,
+// // publicationYear, and isAvailable).
+function addNewBook(){
+    new_list(=>){
+        title:`Born a crime`,
+        author:`Trevor Noah`,
+        publicationYear:2017,
+        isAvailable:True
 
-//     }
+    }
 
-//     }
+    }
     
-// Create a function checkoutBook that takes a book title as an argument and changes
-// the book's isAvailable property to false. If the book is not found in the library, the
-// function should return a message indicating that the book is not available.
+// // Create a function checkoutBook that takes a book title as an argument and changes
+// // the book's isAvailable property to false. If the book is not found in the library, the
+// // function should return a message indicating that the book is not available.
 function checkoutBook(booktitle){
 for(let i=0;i<booktitle.length;i++)
 if(b<=booktitle.length){
@@ -58,9 +59,9 @@ else{
 }
 console.log(checkoutBook(booktitle))
 
-// Create a function returnBook that takes a book title as an argument and changes the
-// book's isAvailable property to true. If the book is not found in the library, the function
-// should return a message indicating that the book does not belong to the library.
+// // Create a function returnBook that takes a book title as an argument and changes the
+// // book's isAvailable property to true. If the book is not found in the library, the function
+// // should return a message indicating that the book does not belong to the library.
 function returnBook(booktitle){
     for(let k=0;k<booktitle.length;i++){
         if(k<=booktitle.length){
